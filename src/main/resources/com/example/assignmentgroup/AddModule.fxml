@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignmentgroup.AddModule">
+   <children>
+      <Pane layoutX="187.0" layoutY="86.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #17282e; -fx-border-radius: 10px; -fx-border-width: 5px; -fx-border-color: white;">
+               <children>
+                  <Label layoutX="183.0" layoutY="22.0" prefHeight="49.0" prefWidth="200.0" text="Add Module" textFill="#f2e7e7">
+                     <font>
+                        <Font name="System Bold Italic" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblModuleName" layoutX="8.0" layoutY="86.0" prefHeight="38.0" prefWidth="200.0" text="Module Name" textFill="#d7d2d2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label fx:id="LblModuleCode" layoutX="14.0" layoutY="145.0" prefHeight="38.0" prefWidth="193.0" text="Module Code" textFill="#e4dcdc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label fx:id="lblLecturer" layoutX="14.0" layoutY="206.0" prefHeight="38.0" prefWidth="193.0" text="Lecturer" textFill="#e4dcdc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label fx:id="lblClassName" layoutX="14.0" layoutY="268.0" prefHeight="38.0" prefWidth="193.0" text="Class Name" textFill="#e4dcdc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <TextField fx:id="txtModuleName" layoutX="206.0" layoutY="87.0" />
+                  <TextField fx:id="txtModuleCode" layoutX="206.0" layoutY="145.0" />
+                  <TextField fx:id="txtLecturer" layoutX="206.0" layoutY="206.0" />
+                  <TextField fx:id="txtClassName" layoutX="206.0" layoutY="268.0" />
+                  <Button fx:id="btnExit" layoutX="355.0" layoutY="338.0" mnemonicParsing="false" onAction="#Exit" style="-fx-background-color: white;" text="Exit">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnAddModule" layoutX="208.0" layoutY="338.0" mnemonicParsing="false" onAction="#AddModule" style="-fx-background-color: white;" text="Add Module">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="162.0" fitWidth="149.0" layoutX="437.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@download.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

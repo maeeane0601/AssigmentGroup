@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="553.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignmentgroup.AdminActions">
+    <children>
+        <Pane prefHeight="553.0" prefWidth="642.0" style="-fx-background-color: aqua;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane layoutX="151.0" layoutY="-6.0" prefHeight="563.0" prefWidth="487.0" style="-fx-background-color: beige; -fx-border-color: beige; -fx-border-width: 2px;">
+                    <children>
+                        <Label fx:id="txtAdminActions" layoutX="141.0" layoutY="38.0" prefHeight="40.0" prefWidth="187.0" text="AdminActions" textFill="#111f40">
+                            <font>
+                                <Font name="System Bold" size="25.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="btnAddAcademicYear" layoutX="289.0" layoutY="364.0" mnemonicParsing="false" onAction="#AddAcademicYear" prefHeight="40.0" prefWidth="151.0" text="Add AcademicYear" textFill="BROWN">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnAddModule" layoutX="24.0" layoutY="364.0" mnemonicParsing="false" onAction="#AddModule" prefHeight="40.0" prefWidth="130.0" text="Add Module" textFill="BROWN">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnAddSemester" layoutX="290.0" layoutY="272.0" mnemonicParsing="false" onAction="#AddSemester" prefHeight="40.0" prefWidth="151.0" text="Add Semester" textFill="BROWN">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                  <Button fx:id="btnLogout" layoutX="121.0" layoutY="472.0" mnemonicParsing="false" onAction="#Logout" prefHeight="47.0" prefWidth="175.0" style="-fx-background-color: lightgrey;" text="Logout">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.21969696789076834" endY="0.12878786975687195" startX="0.2462121392741348" startY="0.03030307365186287">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="btnAddClass" layoutX="24.0" layoutY="282.0" mnemonicParsing="false" onAction="#AddClass" prefHeight="40.0" prefWidth="130.0" text="Add Class" textFill="BROWN">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Pane layoutX="296.0" layoutY="93.0" prefHeight="154.0" prefWidth="151.0" style="-fx-background-color: beige; -fx-border-color: black; -fx-border-radius: 8px; -fx-border-width: 2px;">
+                     <children>
+                              <Button fx:id="btnAddStudent" layoutX="11.0" layoutY="108.0" mnemonicParsing="false" onAction="#AddStudent" prefHeight="40.0" prefWidth="130.0" text="Add Student" textFill="BROWN">
+                                  <font>
+                                      <Font name="System Bold" size="14.0" />
+                                  </font>
+                              </Button>
+                        <ImageView fitHeight="100.0" fitWidth="145.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@st.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="27.0" layoutY="93.0" prefHeight="154.0" prefWidth="151.0" style="-fx-background-color: beige; -fx-border-color: black; -fx-border-radius: 8px; -fx-border-width: 2px;">
+                     <children>
+                              <Button fx:id="btnAddLecturer" layoutX="10.0" layoutY="107.0" mnemonicParsing="false" onAction="#AddLecturer" prefHeight="40.0" prefWidth="130.0" text="Add Lecturer" textFill="BROWN">
+                                  <font>
+                                      <Font name="System Bold" size="14.0" />
+                                  </font>
+                              </Button>
+                        <ImageView fitHeight="91.0" fitWidth="130.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Lecturer.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                    </children>
+                </Pane>
+            <Pane prefHeight="553.0" prefWidth="151.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="12.0" layoutY="51.0" prefHeight="40.0" prefWidth="130.0" text="Admin Profile" textFill="#764242">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="148.0" fitWidth="130.0" layoutX="8.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@aa.gif" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnViewProfile" layoutX="3.0" layoutY="339.0" mnemonicParsing="false" onAction="#btnViewProfile" prefHeight="40.0" prefWidth="130.0" text="View Profile">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="txtViewProfile" layoutX="1.0" layoutY="205.0" prefHeight="137.0" prefWidth="151.0" />
+                  <Button fx:id="btnView" layoutX="6.0" layoutY="440.0" mnemonicParsing="false" onAction="#View" prefHeight="40.0" prefWidth="134.0" text="View">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

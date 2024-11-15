@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="758.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignmentgroup.PRLWeeklyCourseReport">
+   <children>
+      <Pane layoutX="138.0" layoutY="168.0" prefHeight="758.0" prefWidth="796.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="5.0" layoutY="10.0" prefHeight="738.0" prefWidth="786.0" style="-fx-background-color: lightgrey;">
+               <children>
+                  <Label layoutX="126.0" layoutY="8.0" prefHeight="32.0" prefWidth="306.0" text="PRL Weekly Course Report" textFill="#040080">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <GridPane layoutX="14.0" layoutY="58.0" prefHeight="282.0" prefWidth="603.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="297.20001220703125" minWidth="10.0" prefWidth="233.20001220703125" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="369.79998779296875" minWidth="10.0" prefWidth="369.79998779296875" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="97.59998168945313" minHeight="10.0" prefHeight="97.59998168945313" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="135.99999389648437" minHeight="10.0" prefHeight="109.6" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="165.60001831054686" minHeight="10.0" prefHeight="124.80000000000001" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="165.60001831054686" minHeight="10.0" prefHeight="124.80000000000001" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="165.60001831054686" minHeight="10.0" prefHeight="124.80000000000001" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="lblLecturer" prefHeight="38.0" prefWidth="170.0" text="Lecturer">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <TextField fx:id="txtLecturer" prefHeight="41.0" prefWidth="370.0" GridPane.columnIndex="1" />
+                        <Label fx:id="lblClass" prefHeight="46.0" prefWidth="166.0" text="Class" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="lblCourseName" layoutX="10.0" layoutY="110.0" prefHeight="50.0" prefWidth="170.0" text="Course Name &amp; Class" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <TextField fx:id="txtClass" prefHeight="36.0" prefWidth="370.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtCourseName" prefHeight="40.0" prefWidth="370.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="lblChapterCovered" prefHeight="46.0" prefWidth="173.0" text="Chapter Covered (Weekly)" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="lblModeofDelivery" layoutX="10.0" layoutY="228.0" prefHeight="46.0" prefWidth="168.0" text="Mode of Delivery" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <TextField fx:id="txtChapterCovered" prefHeight="42.0" prefWidth="370.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="txtModeofDelivery" prefHeight="36.0" prefWidth="370.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+                  <Label layoutX="14.0" layoutY="340.0" prefHeight="46.0" prefWidth="393.0" text="Student Attendance and Missed Classes" textFill="#040080">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="386.0" prefHeight="42.0" prefWidth="149.0" text="Student Name">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="13.0" layoutY="438.0" prefHeight="42.0" prefWidth="149.0" text="Missed Classes">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="13.0" layoutY="490.0" prefHeight="42.0" prefWidth="149.0" text="Level of Attendance">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="txtStudentName" layoutX="161.0" layoutY="387.0" prefHeight="40.0" prefWidth="170.0" />
+                  <TextField fx:id="txtMissedClasses" layoutX="161.0" layoutY="439.0" prefHeight="40.0" prefWidth="168.0" />
+                  <TextField fx:id="txtLevelOfAttendance" layoutX="160.0" layoutY="491.0" prefHeight="40.0" prefWidth="166.0" />
+                  <GridPane layoutX="349.0" layoutY="390.0" prefHeight="138.0" prefWidth="427.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.799951171875" minWidth="10.0" prefWidth="248.99998779296874" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.20001220703125" minWidth="10.0" prefWidth="178.60001220703128" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="210.0" text="Student Registrations per Course">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label layoutX="10.0" layoutY="18.0" prefHeight="18.0" prefWidth="157.0" text="Challenges in Stream" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label layoutX="10.0" layoutY="53.0" prefHeight="0.0" prefWidth="148.0" text="Recommendations" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <TextField fx:id="txtStudentRegistration" prefHeight="26.0" prefWidth="196.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="txtChalenges" prefHeight="26.0" prefWidth="177.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtRecommendations" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtmalpractice" prefHeight="49.0" prefWidth="218.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label prefHeight="34.0" prefWidth="255.0" text="Alleged Instances o Assessment Malpractice" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                     </children>
+                  </GridPane>
+                  <Label layoutX="478.0" layoutY="350.0" prefHeight="38.0" prefWidth="249.0" text="Other Information of PRL" textFill="#040080">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSubmitPRLReport" layoutX="174.0" layoutY="567.0" mnemonicParsing="false" onAction="#SubmitPRLReport" prefHeight="63.0" prefWidth="210.0" style="-fx-background-color: aqua;" text="Submit PRL Report">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="btnLogout" layoutX="565.0" layoutY="573.0" mnemonicParsing="false" onAction="#Logout" prefHeight="63.0" prefWidth="170.0" style="-fx-background-color: aqua;" text="Logout">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

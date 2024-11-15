@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="535.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignmentgroup.View">
+   <children>
+      <Pane layoutX="182.0" layoutY="93.0" prefHeight="535.0" prefWidth="695.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="16.0" layoutY="11.0" prefHeight="514.0" prefWidth="671.0" style="-fx-background-color: #17282e;">
+               <children>
+                  <TableView fx:id="tblView" layoutX="68.0" layoutY="68.0" prefHeight="393.0" prefWidth="536.0">
+                    <columns>
+                      <TableColumn fx:id="collectures" prefWidth="200.0000457763672" style="-fx-border-color: #17282e;" text="Lecturers" />
+                      <TableColumn fx:id="colmodules" prefWidth="163.99993896484375" style="-fx-border-color: #17282e;" text="Modules" />
+                        <TableColumn fx:id="colsemesters" prefWidth="172.00006103515625" style="-fx-border-color: #17282e;" text="Semesters" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="270.0" layoutY="15.0" prefHeight="32.0" prefWidth="163.0" text="View" textFill="#f4eded">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnCancel" layoutX="220.0" layoutY="475.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="25.0" prefWidth="82.0" text="Cancel">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

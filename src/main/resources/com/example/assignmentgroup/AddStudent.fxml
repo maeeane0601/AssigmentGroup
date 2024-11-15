@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="529.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignmentgroup.AddStudent">
+   <children>
+      <Pane layoutX="164.0" layoutY="90.0" prefHeight="529.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="29.0" prefHeight="529.0" prefWidth="570.0" style="-fx-background-color: #17282e;">
+               <children>
+                  <Label layoutX="115.0" layoutY="20.0" prefHeight="34.0" prefWidth="210.0" text="Add New Student" textFill="#f2eded">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblName" layoutX="34.0" layoutY="119.0" prefHeight="35.0" prefWidth="140.0" text="Name" textFill="#f2eded" />
+                  <Label fx:id="lblSurname" layoutX="34.0" layoutY="185.0" prefHeight="35.0" prefWidth="140.0" text="Surname" textFill="#f2eded" />
+                  <Label fx:id="lblStudentID" layoutX="34.0" layoutY="70.0" prefHeight="35.0" prefWidth="140.0" text="Student ID" textFill="#f2eded" />
+                  <Label fx:id="lblEmail" layoutX="37.0" layoutY="239.0" prefHeight="35.0" prefWidth="140.0" text="Email" textFill="#f2eded" />
+                  <Label fx:id="lblCourse" layoutX="34.0" layoutY="404.0" prefHeight="35.0" prefWidth="140.0" text="Course" textFill="#f2eded" />
+                  <Label fx:id="lblClassName" layoutX="34.0" layoutY="354.0" prefHeight="35.0" prefWidth="140.0" text="Class Name" textFill="#f2eded" />
+                  <Label fx:id="lblPhoneNumbers" layoutX="34.0" layoutY="295.0" prefHeight="35.0" prefWidth="140.0" text="Phone Numbers" textFill="#f2eded" />
+                  <TextField fx:id="txtName" layoutX="186.0" layoutY="119.0" prefHeight="43.0" prefWidth="210.0" />
+                  <TextField fx:id="txtStudentID" layoutX="186.0" layoutY="66.0" prefHeight="43.0" prefWidth="210.0" />
+                  <TextField fx:id="txtEmail" layoutX="186.0" layoutY="235.0" prefHeight="43.0" prefWidth="210.0" />
+                  <TextField fx:id="txtCourse" layoutX="186.0" layoutY="404.0" prefHeight="43.0" prefWidth="210.0" />
+                  <TextField fx:id="txtClassName" layoutX="186.0" layoutY="350.0" prefHeight="43.0" prefWidth="210.0" />
+                  <TextField fx:id="txtPhoneNumbers" layoutX="186.0" layoutY="291.0" prefHeight="43.0" prefWidth="210.0" />
+                  <TextField fx:id="txtSurname" layoutX="186.0" layoutY="181.0" prefHeight="43.0" prefWidth="210.0" />
+                  <Button fx:id="btnAddStudent" layoutX="271.0" layoutY="466.0" mnemonicParsing="false" onAction="#AddStudent" prefHeight="43.0" prefWidth="174.0" style="-fx-background-color: green;" text="Add Student">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="btnExit" layoutX="50.0" layoutY="466.0" mnemonicParsing="false" onAction="#Exit" prefHeight="43.0" prefWidth="140.0" style="-fx-background-color: green;" text="Exit">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Pane layoutX="402.0" layoutY="-1.0" prefHeight="450.0" prefWidth="168.0" style="-fx-background-color: black;">
+                     <children>
+                        <ImageView fitHeight="265.0" fitWidth="168.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@IMG-20230920-WA0019.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="52.0" fitWidth="168.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imag.gif" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="12.0" layoutY="370.0" prefHeight="44.0" prefWidth="166.0" rotate="-34.2" text="Student......." textFill="#e1dcdc">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="328.0" prefHeight="44.0" prefWidth="166.0" rotate="14.4" text="Student......." textFill="#8489d1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="12.0" layoutY="352.0" prefHeight="44.0" prefWidth="166.0" rotate="10.3" text="Student......." textFill="#bfa8f0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

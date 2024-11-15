@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignmentgroup.AddAcademicYear">
+   <children>
+      <Pane layoutX="120.0" layoutY="62.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: beige;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="-1.0" layoutY="-4.0" prefHeight="409.0" prefWidth="607.0" style="-fx-background-color: #17282e;">
+               <children>
+                  <Label layoutX="228.0" layoutY="7.0" prefHeight="31.0" prefWidth="251.0" text="Add New Academic Year" textFill="#eae8e8">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <GridPane layoutX="75.0" layoutY="69.0" prefHeight="253.0" prefWidth="470.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="201.39996337890625" minWidth="10.0" prefWidth="201.39996337890625" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.20001220703125" minWidth="10.0" prefWidth="195.60003662109375" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="47.999993896484376" minHeight="10.0" prefHeight="44.000006103515624" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="47.000006103515624" minHeight="10.0" prefHeight="41.59999389648437" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="41.60000610351563" minHeight="10.0" prefHeight="32.800012207031244" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.7999755859375" minHeight="10.0" prefHeight="33.59998779296876" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="53.60002136230469" minHeight="10.0" prefHeight="36.800024414062506" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="45.80000000000001" minHeight="10.0" prefHeight="38.19999999999999" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="28.79999389648438" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="lblStartYear" prefHeight="47.0" prefWidth="202.0" text="Start Year" textFill="#fcf5f5">
+                           <font>
+                              <Font size="19.0" />
+                           </font></Label>
+                        <Label fx:id="lblEndYear" layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="206.0" text="End Year" textFill="#fcf5f5" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="19.0" />
+                           </font></Label>
+                        <Label fx:id="lblSemester1Start" layoutX="10.0" layoutY="42.0" prefHeight="33.0" prefWidth="198.0" text="Semester 1 Start Date" textFill="#fcf5f5" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="19.0" />
+                           </font></Label>
+                        <Label fx:id="lblSemester1End" layoutX="10.0" layoutY="75.0" prefHeight="33.0" prefWidth="198.0" text="Semester 1 End Date" textFill="#fcf5f5" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="19.0" />
+                           </font></Label>
+                        <Label fx:id="lblSemester2Start" layoutX="10.0" layoutY="107.0" prefHeight="33.0" prefWidth="198.0" text="Semester 2 Start Date" textFill="#fcf5f5" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="19.0" />
+                           </font></Label>
+                        <Label fx:id="lblSemester2End" layoutX="10.0" layoutY="148.0" prefHeight="39.0" prefWidth="202.0" text="Semester 2 End Date" textFill="#fcf5f5" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="19.0" />
+                           </font></Label>
+                        <TextField fx:id="txtStartYear" prefHeight="34.0" prefWidth="196.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="txtEndYear" layoutX="212.0" layoutY="10.0" prefHeight="39.0" prefWidth="229.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <DatePicker fx:id="dpSemester1Start" prefHeight="26.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <DatePicker fx:id="dpSemester1End" layoutX="212.0" layoutY="109.0" prefHeight="35.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <DatePicker fx:id="dpSemester2Start" layoutX="212.0" layoutY="147.0" prefHeight="34.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <DatePicker fx:id="dpSemester2End" layoutX="212.0" layoutY="186.0" prefHeight="35.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                     </children>
+                  </GridPane>
+                  <Button fx:id="btnAddAcademicYear" layoutX="348.0" layoutY="335.0" mnemonicParsing="false" onAction="#AddAcademicYear" prefHeight="47.0" prefWidth="168.0" text="Add AcademicYear">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnExit" layoutX="82.0" layoutY="339.0" mnemonicParsing="false" onAction="#Exit" prefHeight="39.0" prefWidth="148.0" text="Exit ">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
